@@ -17,8 +17,8 @@ For more info use:
 ### Unit tests
 
 ```
-cd tests
 pip install pytest
+cd tests
 pytest
 ```
 

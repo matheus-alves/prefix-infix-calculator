@@ -4,6 +4,8 @@ Helper module for converting the operator symbols to the built-in Python operato
 
 import operator as op
 
+SYMBOLS = ['+', '-', '*', '/']
+
 OPERATIONS = {
     '+': op.add,
     '*': op.mul,
