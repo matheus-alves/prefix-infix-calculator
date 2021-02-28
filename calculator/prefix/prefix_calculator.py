@@ -11,7 +11,7 @@ def do_evaluate(tokens: List) -> float:
     Recursive function to evaluate the expression
     :param tokens: the list of tokens
     :return: either the token itself converted to integer
-    or the result of the operation as recursive calls
+    or the result of the operation from recursive calls
     """
     token = tokens.pop(0)
 
