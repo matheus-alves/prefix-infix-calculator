@@ -51,9 +51,27 @@ class TestPrefixCalculator:
 
         assert result == 5
 
-    def test_complex_all_operations_case(self):
+    def test_complex_operations_cases(self):
         expression = '- / 10 + 1 1 * 1 2'
 
         result = evaluate_prefix_expression(expression)
 
         assert result == 3
+
+        expression = '+ * 2 3 / 4 2'
+
+        result = evaluate_prefix_expression(expression)
+
+        assert result == 8
+
+        expression = '/ * 2 + 3 6 2'
+
+        result = evaluate_prefix_expression(expression)
+
+        assert result == 9
+
+        expression = '* 2 + 2 / 2 2'
+
+        result = evaluate_prefix_expression(expression)
+
+        assert result == 6
