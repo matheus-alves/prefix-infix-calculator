@@ -16,7 +16,6 @@ def do_evaluate(tokens: List) -> float:
     :return: the result of the operation from recursive calls
     """
     current_args = list()
-    operation = None
 
     while tokens:
         token = tokens.pop(0)
@@ -33,7 +32,8 @@ def do_evaluate(tokens: List) -> float:
         if token == END_PARENTHESIS:
             break
 
-    return operation(current_args.pop(0), current_args.pop(0)) if len(current_args) == 2 else current_args.pop()
+    return operation(current_args.pop(0), current_args.pop(0)) \
+        if len(current_args) == 2 else current_args.pop()
 
 
 def evaluate_infix_expression(expression: str) -> float:
