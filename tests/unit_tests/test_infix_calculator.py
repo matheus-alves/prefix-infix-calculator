@@ -1,4 +1,4 @@
-from calculator.infix.infix_calculator import evaluate_infix_expression
+from calculator.model.infix.infix_calculator import evaluate_infix_expression
 
 
 class TestInfixCalculator:

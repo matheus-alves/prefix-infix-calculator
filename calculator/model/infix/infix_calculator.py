@@ -3,7 +3,7 @@ The infix version of the calculator
 """
 from typing import List
 
-from calculator.base_calculator_operations import SYMBOLS, OPERATIONS
+from calculator.model.base_calculator_operations import SYMBOLS, OPERATIONS
 
 END_PARENTHESIS = ')'
 START_PARENTHESIS = '('

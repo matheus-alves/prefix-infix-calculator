@@ -1,4 +1,4 @@
-from calculator.prefix.prefix_calculator import evaluate_prefix_expression
+from calculator.model.prefix.prefix_calculator import evaluate_prefix_expression
 
 
 class TestPrefixCalculator:
