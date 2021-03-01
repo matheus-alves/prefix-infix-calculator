@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prefix and Infix Calculator</title>
+</head>
+<body>
+
+<form method="post">
+    <input type="text" name="expression" value=""/>
+    <label for="notations">Choose a notation:</label>
+    <select id="notations" name="notation">
+      <option value="prefix" selected>Prefix</option>
+      <option value="infix">Infix</option>
+    </select>
+
+    <input type="submit">
+</form>
+
+<p>Result: {{ result }}</p>
+
+</body>
+</html>
