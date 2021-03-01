@@ -11,7 +11,7 @@ This repository contains a prefix (reverse polish) and infix notation calculator
 In order to run the API locally, use the following commands:
 
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 uvicorn api:app --reload
 ```
 
@@ -26,7 +26,7 @@ uvicorn api:app --reload --port <PORT>
 ### Unit tests
 
 ```
-pip install pytest
+pip3 install pytest
 cd tests
 pytest
 ```
@@ -34,8 +34,8 @@ pytest
 ### Code checks
 
 ```
-pip install mypy
-pip install pylint 
+pip3 install mypy
+pip3 install pylint
 
 mypy calculator
 pylint calculator
